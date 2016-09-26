@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock, Scissors , Paper</title>
+     <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </head>
+  <body>
+
+    <div class="wrapper">
+     <h1>Welcome to My Gaming World...</h1>
+    <div class="center">
+    <div class="clearfix"></div>
+ 
+      <div class="boxContainer">
+        <div class="controls">
+          <div><span id="err"></span></div>
+          <input class="inpBox" type="text" id="minits" placeholder="00" /> : 
+          <input class="inpBox" type="text" id="seconds" placeholder="00" />
+
+          <button class="rBtn start" onclick="startTimer()">
+              <span>Start </span>
+          </button>
+
+          <button class="rBtn reset" onclick="resetCounter()">
+              <span>Reset </span>
+          </button>
+
+          <div id="timer"></div>
+          <div id="countdown"></div>
+
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="btn-list" class="row btn-list" style="display:none">
+
+       
+        <button class="rBtn rock" onclick="clickedOn('rock')">Rock</button>
+        <button class="rBtn paper" onclick="clickedOn('paper')">Paper</button>
+        <button class="rBtn scissor" onclick="clickedOn('scissor')">Scissor</button>
+        
+      </div>
+      <div class="clearfix"></div>
+      <div id="boatSel" class="boatSel"></div>
+      <div class="clearfix"></div>
+      <div id="scoreList" class="row scorelist" style="display:none">
+        <table class="scrTbl">
+          <thead>
+            <th>Won</th>
+            <th>Loss</th>
+            <th>Tie</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="won">0</td>
+              <td id="loss">0</td>
+              <td id="tie">0</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+
+    </div>
+    </div>
+
+
+  </body>
+</html>
